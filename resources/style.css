@@ -1,0 +1,495 @@
+/* Global settings */
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+  width: 308px;
+  border: 1px solid black;
+  margin: 5px 4px 4px 4px;
+}
+
+h1{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 12px 0px 0px 14px;
+}
+
+h2{
+  font-size: 11px;
+  font-weight: 700;
+  color: #009cdd;
+  margin: 0px;
+}
+
+h3{
+  font-size: 9px;
+  margin: 0px;
+  color: #666;
+  font-weight: 600;
+}
+
+p{
+  font-size: 11px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+/* Icon Colors */
+
+#red{
+  color: #EF1D17;
+}
+
+#grey{
+  color: #BBBBBB;
+}
+
+#hardgray{
+  color: #787778;
+}
+
+/* This is the HEADER section, contains TITLE and NAVIGATION */
+
+/* This is the HEADER section */
+
+.header{
+  width: 100%;
+  height: 63px;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#fff, #dedede);
+}
+
+
+/*This is the NAVIGATION section*/
+
+.header nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 8px;
+}
+
+.header nav ul{
+  display: flex;
+  position: relative;
+  left: 10px;
+  top: 2.3px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #009cdd;
+  padding: 0px;
+}
+
+.header nav ul li{
+  display: inline-flex;
+}
+
+.header nav ul .last{
+  padding: 6px 10px;
+  color: black;
+  background-color: #fff;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.header nav ul .read{
+  padding: 6px 13px 6px 15px;
+}
+
+.header nav ul .rated{
+  padding: 6px 17px 6px 15px;
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(-10deg, #aaa, transparent);
+  border-image-slice: 1;
+}
+
+.header nav ul .commented{
+  padding: 6px 15px;
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(-10deg, #aaa, transparent);
+  border-image-slice: 1;
+}
+
+/* This is the STORIES section, contains GUITAR1, BASS1, BASS2, DRUM1 and DRUM2*/
+
+.story{
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #aaaaaa;
+  display: flex;
+}
+
+/* This is GUITAR1 */
+
+.guitar1{
+  background: linear-gradient(#fff, #e7e7e7);
+}
+
+.guitar1 .image{
+  width: 86px;
+  height: 63px;
+  overflow: hidden;
+  margin: 12px 10px 16px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.guitar1 .image img{
+  max-height: 63px;
+}
+
+.guitar1 .image .overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 16px;
+  background: linear-gradient(#fad30f, #daae0f)
+}
+
+.guitar1 .image .overlay p{
+  font-size: 9px;
+  margin: 0px 5px;
+}
+
+.guitar1 .text{
+  width: 197px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.guitar1 .text .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10px;
+}
+
+.guitar1 .text .top .comments{
+  display: flex;
+  align-items: center;
+}
+
+.guitar1 .text .top .comments i{
+  font-size: 9px;
+  margin-right: 3px;
+}
+
+.guitar1 .text .title{
+  height: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  margin-bottom: 12px;
+}
+
+.guitar1 .text .description{
+  width: 170px;
+  height: 27px;
+}
+/* This is BASS1 */
+
+.bass1 .image{
+  width: 86px;
+  height: 63px;
+  overflow: hidden;
+  margin: 12px 10px 16px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.bass1 .image img{
+  max-height: 63px;
+}
+
+.bass1 .image .overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 16px;
+  background: linear-gradient(#94FF21, #79CE30)
+}
+
+.bass1 .image .overlay p{
+  font-size: 9px;
+  margin: 0px 5px;
+}
+
+.bass1 .text{
+  width: 197px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.bass1 .text .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10px;
+}
+
+.bass1 .text .top .comments{
+  display: flex;
+  align-items: center;
+}
+
+.bass1 .text .top .comments i{
+  font-size: 9px;
+  margin-right: 3px;
+}
+
+.bass1 .text .title{
+  height: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  margin-bottom: 12px;
+}
+
+.bass1 .text .description{
+  width: 170px;
+  height: 27px;
+}
+
+
+/* This is DRUMS1 */
+
+.drums1 .image{
+  width: 86px;
+  height: 63px;
+  overflow: hidden;
+  margin: 12px 10px 16px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.drums1 .image img{
+  max-height: 63px;
+}
+
+.drums1 .image .overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 16px;
+  background: linear-gradient(#C92CC8, #960294);
+}
+
+.drums1 .image .overlay p{
+  font-size: 9px;
+  margin: 0px 5px;
+}
+
+.drums1 .text{
+  width: 197px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.drums1 .text .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10px;
+}
+
+.drums1 .text .top .comments{
+  display: flex;
+  align-items: center;
+}
+
+.drums1 .text .top .comments i{
+  font-size: 9px;
+  margin-right: 3px;
+}
+
+.drums1 .text .title{
+  height: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  margin-bottom: 12px;
+}
+
+.drums1 .text .description{
+  width: 170px;
+  height: 27px;
+}
+
+/* This is BASS2 */
+
+.bass2 .image{
+  width: 86px;
+  height: 63px;
+  overflow: hidden;
+  margin: 12px 10px 16px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.bass2 .image img{
+  max-height: 63px;
+}
+
+.bass2 .image .overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 16px;
+  background: linear-gradient(#94FF21, #79CE30);
+}
+
+.bass2 .image .overlay p{
+  font-size: 9px;
+  margin: 0px 5px;
+}
+
+.bass2 .text{
+  width: 197px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.bass2 .text .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10px;
+}
+
+.bass2 .text .top .comments{
+  display: flex;
+  align-items: center;
+}
+
+.bass2 .text .top .comments i{
+  font-size: 9px;
+  margin-right: 3px;
+}
+
+.bass2 .text .title{
+  height: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  margin-bottom: 12px;
+}
+
+.bass2 .text .description{
+  width: 170px;
+  height: 27px;
+}
+
+/* This is DRUMS2 */
+
+.drums2 .image{
+  width: 86px;
+  height: 63px;
+  overflow: hidden;
+  margin: 12px 10px 16px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.drums2 .image img{
+  max-height: 63px;
+}
+
+.drums2 .image .overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 16px;
+  background: linear-gradient(#C92CC8, #960294)
+}
+
+.drums2 .image .overlay p{
+  font-size: 9px;
+  margin: 0px 5px;
+}
+
+.drums2 .text{
+  width: 197px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.drums2 .text .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10px;
+}
+
+.drums2 .text .top .comments{
+  display: flex;
+  align-items: center;
+}
+
+.drums2 .text .top .comments i{
+  font-size: 9px;
+  margin-right: 3px;
+}
+
+
+.drums2 .text .title{
+  height: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  margin-bottom: 12px;
+}
+
+.drums2 .text .description{
+  width: 170px;
+  height: 27px;
+}
+
+/* This is the FOOTER section */
+
+.footer{
+  height: 37px;
+  display: flex;
+  align-items: center;
+}
+
+.footer .viewall{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.footer .viewall p{
+  color: #009cdd;
+  margin-left: 3px;
+}
